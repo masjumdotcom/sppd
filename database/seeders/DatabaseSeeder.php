@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
         $this->call(OfficeSeeder::class);
         $this->call(UserSeeder::class);
         $this->call(EmployeSeeder::class);
-        Employe::factory(30)->create();
-        Letter::factory(30)->has(Participant::factory()->count(3))->create();
+        // Employe::factory(30)->create();
+        // Letter::factory(30)->has(Participant::factory()->count(3))->create();
     }
 }

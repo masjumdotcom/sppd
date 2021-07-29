@@ -1,12 +1,14 @@
 @php 
-    setlocale(LC_ALL, 'id_ID');
+    setlocale(LC_ALL, 'id');
     // echo \Carbon\Carbon::now()->formatLocalized('%A %d %B %Y')
 
     use Carbon\Carbon;
+    Carbon::setLocale('id');
     $date_issue = new Carbon($sppd->date_issue);
     $date_start = new Carbon($sppd->date_start);
     $date_end   = new Carbon($sppd->date_end);
     $peserta = 0;
+
 @endphp
 
 <!DOCTYPE html>
@@ -71,7 +73,7 @@
 
         <div class="text-center">
             <h3 class="font-bold">SURAT TUGAS</h3>
-            <span>Nomor : {{ $sppd->nomor }}</span>
+            <span>Nomor : 090/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /{{ $sppd->nomor }}</span>
         </div>
 
         
@@ -180,7 +182,7 @@
         <div class="text-center mb-6">
             <h3 class="font-bold">SURAT PERINTAH PERJALANAN DINAS</h3>
             <span>( S P P D )</span><br />
-            <span>Nomor : {{ $sppd->nomor }}</span>
+            <span>Nomor : 090/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /{{ $sppd->nomor }}
         </div>
 
         <table class="mb-6">

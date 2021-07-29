@@ -19,7 +19,7 @@ class EmployeSeeder extends Seeder
         $data = Employe::insert([
             'user_id'       => 1,
             'nip'           => '2154 0464 879 98',
-            'jabatan'       => 'Camat Pakisaji',
+            'jabatan'       => 'Camat Donomulyo',
             'pangkat'       => 'Gol O',
             'status'        => 'Pembina Tingkat 1',
         ]);
