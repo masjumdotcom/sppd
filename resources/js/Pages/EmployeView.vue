@@ -241,6 +241,7 @@
                     .then(res=>{
                         this.clearForm()
                         this.showModal = !this.showModal
+                        this.getResult(0)
                     })
                 }
             },
